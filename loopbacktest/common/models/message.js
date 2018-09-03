@@ -126,6 +126,7 @@ module.exports = function(Message) {
    * @param myArray {Array} Array to split
    * @param chunkSize {Integer} Size of every group
    */
+   
   function splitChunkArray(myArray, chunk_size){
       var resultsSplit = [];
 
