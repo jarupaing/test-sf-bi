@@ -1,0 +1,43 @@
+{
+  "name": "Message",
+  "base": "Model",
+  "properties": {
+    "id": {
+      "type": "string",
+      "length": 18,
+      "required": true,
+      "id": true,
+      "postgresql": {
+        "columnName": "id",
+        "dataType": "character",
+        "dataLength": 18,
+        "nullable": "no" 
+      }
+    },
+    "name": {
+      "type": "String",
+      "length": 80,
+      "required": false,
+      "id": false,
+      "postgresql": {
+        "columnName": "name",
+        "dataType": "varchar",
+        "dataLength": 80,
+        "nullable": "yes" 
+      }
+    },
+    "account": {
+      "type" : "string",
+      "id": false,
+      "required": false,
+      "postgresql": {
+        "columnName": "account",
+        "dataType": "varchar",
+        "dataLength": 80,
+        "nullable": "yes" 
+      }
+    }
+  }, 
+  "methods": {
+  }
+}
